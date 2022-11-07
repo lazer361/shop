@@ -1,0 +1,50 @@
+.root {
+    position: relative;
+
+    .input {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 12px 20px;
+        border-radius: 10px;
+        width: 250px;
+        font-size: 16px;
+        padding-left: 50px;
+
+        &:focus {
+            border: 1px solid rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    #search {
+        position: absolute;
+        left: 12px;
+        top: 12px;
+        width: 22px;
+        height: 22px;
+        opacity: 0.3;
+    }
+
+    .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 18px;
+        height: 18px;
+        opacity: 0.3;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    @media (max-width: 1000px) { 
+        
+        .input {
+          margin-bottom: 20px;
+        }
+      }
+  
+}
+
+    
+    
